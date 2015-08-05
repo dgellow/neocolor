@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dgellow/neocolor.svg?branch=master)](https://travis-ci.org/dgellow/neocolor)
+
 ![neocolor logo](http://i.imgur.com/9kpA4C9.png)
 
 # neocolor
