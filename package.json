@@ -4,7 +4,7 @@
   "description": "Minimal library for colored console output",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/dgellow/neocolor/issues"
   },
-  "homepage": "https://github.com/dgellow/neocolor"
+  "homepage": "https://github.com/dgellow/neocolor",
+  "devDependencies": {
+    "tesuto": "0.0.6"
+  }
 }
