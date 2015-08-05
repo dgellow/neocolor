@@ -41,6 +41,3 @@ var neocolor = module.exports = [].reduce.call(Object.keys(codes), function(acc,
   };
   return acc;
 }, {});
-
-console.log(neocolor.yellow('hello you'));
-console.error(neocolor.red('alert!'));
