@@ -1,0 +1,27 @@
+{
+  "name": "neocolor",
+  "version": "0.0.0",
+  "description": "Minimal library for colored console output",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dgellow/neocolor.git"
+  },
+  "keywords": [
+    "minimal",
+    "color",
+    "colors",
+    "console",
+    "terminal",
+    "output"
+  ],
+  "author": "Samuel El-Borai <samuel.elborai@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgellow/neocolor/issues"
+  },
+  "homepage": "https://github.com/dgellow/neocolor"
+}
