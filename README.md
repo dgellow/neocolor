@@ -1,4 +1,4 @@
-![neocolor logo](http://i.imgur.com/vl37d1s.png)
+![neocolor logo](http://i.imgur.com/9kpA4C9.png)
 
 # neocolor
 
