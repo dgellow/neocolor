@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dgellow/neocolor.svg?branch=master)](https://travis-ci.org/dgellow/neocolor) [![NPM version](https://nodei.co/npm/neocolor.png?compact=true)](https://www.npmjs.com/package/neocolor)
+[![Build Status](https://travis-ci.org/dgellow/neocolor.svg?branch=master)](https://travis-ci.org/dgellow/neocolor) [![npm version](https://badge.fury.io/js/neocolor.svg)](https://badge.fury.io/js/neocolor)
 
 ![neocolor logo](http://i.imgur.com/9kpA4C9.png)
 
