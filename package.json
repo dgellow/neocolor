@@ -1,12 +1,10 @@
 {
   "name": "neocolor",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Minimal library for colored console output",
   "type": "module",
-  "main": "index.js",
-  "exports": [
-    "./index.js"
-  ],
+  "main": "./index.js",
+  "exports": "./index.js",
   "scripts": {
     "test": "node test.js"
   },
@@ -33,6 +31,6 @@
   },
   "homepage": "https://github.com/dgellow/neocolor",
   "devDependencies": {
-    "tesuto": "1.0.0"
+    "tesuto": "2.0.2"
   }
 }
