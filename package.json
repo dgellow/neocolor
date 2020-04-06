@@ -2,7 +2,11 @@
   "name": "neocolor",
   "version": "1.0.0",
   "description": "Minimal library for colored console output",
+  "type": "module",
   "main": "index.js",
+  "exports": [
+    "./index.js"
+  ],
   "scripts": {
     "test": "node test.js"
   },
@@ -12,10 +16,14 @@
   },
   "keywords": [
     "minimal",
+    "minimalist",
     "color",
     "colors",
+    "colour",
+    "colours",
     "console",
     "terminal",
+    "ansi",
     "output"
   ],
   "author": "Samuel El-Borai <samuel.elborai@gmail.com>",
@@ -25,6 +33,6 @@
   },
   "homepage": "https://github.com/dgellow/neocolor",
   "devDependencies": {
-    "tesuto": "0.0.6"
+    "tesuto": "1.0.0"
   }
 }

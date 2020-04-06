@@ -1,43 +1,58 @@
-/*global module*/
-var codes = {
-  reset: [0, 0],
+export const reset = (str) => `\u001b[0m${str}\u001b[0m`
 
-  bold: [1, 22],
-  dim: [2, 22],
-  italic: [3, 23],
-  underline: [4, 24],
-  inverse: [7, 27],
-  hidden: [8, 28],
-  strikethrough: [9, 29],
+export const bold = (str) => `\u001b[1m${str}\u001b[22m`
+export const dim = (str) => `\u001b[2m${str}\u001b[22m`
+export const italic = (str) => `\u001b[3m${str}\u001b[23m`
+export const underline = (str) => `\u001b[4m${str}\u001b[24m`
+export const inverse = (str) => `\u001b[7m${str}\u001b[27m`
+export const hidden = (str) => `\u001b[8m${str}\u001b[28m`
+export const strikethrough = (str) => `\u001b[9m${str}\u001b[29m`
 
-  black: [30, 39],
-  red: [31, 39],
-  green: [32, 39],
-  yellow: [33, 39],
-  blue: [34, 39],
-  magenta: [35, 39],
-  cyan: [36, 39],
-  white: [37, 39],
-  gray: [90, 39],
-  grey: [90, 39],
+export const black = (str) => `\u001b[30m${str}\u001b[39m`
+export const red = (str) => `\u001b[31m${str}\u001b[39m`
+export const green = (str) => `\u001b[32m${str}\u001b[39m`
+export const yellow = (str) => `\u001b[33m${str}\u001b[39m`
+export const blue = (str) => `\u001b[34m${str}\u001b[39m`
+export const magenta = (str) => `\u001b[35m${str}\u001b[39m`
+export const cyan = (str) => `\u001b[36m${str}\u001b[39m`
+export const white = (str) => `\u001b[37m${str}\u001b[39m`
+export const gray = (str) => `\u001b[90m${str}\u001b[39m`
+export const grey = (str) => `\u001b[90m${str}\u001b[39m`
 
-  bgBlack: [40, 49],
-  bgRed: [41, 49],
-  bgGreen: [42, 49],
-  bgYellow: [43, 49],
-  bgBlue: [44, 49],
-  bgMagenta: [45, 49],
-  bgCyan: [46, 49],
-  bgWhite: [47, 49]
-};
+export const bgBlack = (str) => `\u001b[40m${str}\u001b[49m`
+export const bgRed = (str) => `\u001b[41m${str}\u001b[49m`
+export const bgGreen = (str) => `\u001b[42m${str}\u001b[49m`
+export const bgYellow = (str) => `\u001b[43m${str}\u001b[49m`
+export const bgBlue = (str) => `\u001b[44m${str}\u001b[49m`
+export const bgMagenta = (str) => `\u001b[45m${str}\u001b[49m`
+export const bgCyan = (str) => `\u001b[46m${str}\u001b[49m`
+export const bgWhite = (str) => `\u001b[47m${str}\u001b[49m`
 
-var neocolor = module.exports = [].reduce.call(Object.keys(codes), function(acc, c) {
-  acc[c] = function(str) {
-    return ''.concat(
-      '\u001b[', codes[c][0], 'm',
-      str,
-      '\u001b[', codes[c][1], 'm'
-    );
-  };
-  return acc;
-}, {});
+export default {
+  reset,
+  bold,
+  dim,
+  italic,
+  underline,
+  inverse,
+  hidden,
+  strikethrough,
+  black,
+  red,
+  green,
+  yellow,
+  blue,
+  magenta,
+  cyan,
+  white,
+  gray,
+  grey,
+  bgBlack,
+  bgRed,
+  bgGreen,
+  bgYellow,
+  bgBlue,
+  bgMagenta,
+  bgCyan,
+  bgWhite,
+}

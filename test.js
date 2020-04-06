@@ -1,114 +1,112 @@
-/*global require*/
-var assert = require('assert'),
-    t = require('tesuto'),
-    c = require('./index');
+import { equal } from 'assert'
+import { report, result } from 'tesuto'
+import { reset, bold, dim, italic, underline, inverse, hidden, strikethrough, black, red, green, yellow, blue, magenta, cyan, white, gray, grey, bgBlack, bgRed, bgGreen, bgYellow, bgBlue, bgMagenta, bgCyan, bgWhite } from './index.js'
 
-t.report("colors", function() {
-  assert.equal(
-    c.reset("hello"),
+report("colors", function () {
+  equal(
+    reset("hello"),
     "\u001b[0mhello\u001b[0m"
-  );
-  assert.equal(
-    c.bold("hello"),
+  )
+  equal(
+    bold("hello"),
     "\u001b[1mhello\u001b[22m"
-  );
-  assert.equal(
-    c.dim("hello"),
+  )
+  equal(
+    dim("hello"),
     "\u001b[2mhello\u001b[22m"
-  );
-  assert.equal(
-    c.italic("hello"),
+  )
+  equal(
+    italic("hello"),
     "\u001b[3mhello\u001b[23m"
-  );
-  assert.equal(
-    c.underline("hello"),
+  )
+  equal(
+    underline("hello"),
     "\u001b[4mhello\u001b[24m"
-  );
-  assert.equal(
-    c.inverse("hello"),
+  )
+  equal(
+    inverse("hello"),
     "\u001b[7mhello\u001b[27m"
-  );
-  assert.equal(
-    c.hidden("hello"),
+  )
+  equal(
+    hidden("hello"),
     "\u001b[8mhello\u001b[28m"
-  );
-  assert.equal(
-    c.strikethrough("hello"),
+  )
+  equal(
+    strikethrough("hello"),
     "\u001b[9mhello\u001b[29m"
-  );
-  assert.equal(
-    c.black("hello"),
+  )
+  equal(
+    black("hello"),
     "\u001b[30mhello\u001b[39m"
-  );
-  assert.equal(
-    c.red("hello"),
+  )
+  equal(
+    red("hello"),
     "\u001b[31mhello\u001b[39m"
-  );
-  assert.equal(
-    c.green("hello"),
+  )
+  equal(
+    green("hello"),
     "\u001b[32mhello\u001b[39m"
-  );
-  assert.equal(
-    c.yellow("hello"),
+  )
+  equal(
+    yellow("hello"),
     "\u001b[33mhello\u001b[39m"
-  );
-  assert.equal(
-    c.blue("hello"),
+  )
+  equal(
+    blue("hello"),
     "\u001b[34mhello\u001b[39m"
-  );
-  assert.equal(
-    c.magenta("hello"),
+  )
+  equal(
+    magenta("hello"),
     "\u001b[35mhello\u001b[39m"
-  );
-  assert.equal(
-    c.cyan("hello"),
+  )
+  equal(
+    cyan("hello"),
     "\u001b[36mhello\u001b[39m"
-  );
-  assert.equal(
-    c.white("hello"),
+  )
+  equal(
+    white("hello"),
     "\u001b[37mhello\u001b[39m"
-  );
-  assert.equal(
-    c.gray("hello"),
+  )
+  equal(
+    gray("hello"),
     "\u001b[90mhello\u001b[39m"
-  );
-  assert.equal(
-    c.grey("hello"),
+  )
+  equal(
+    grey("hello"),
     "\u001b[90mhello\u001b[39m"
-  );
-  assert.equal(
-    c.bgBlack("hello"),
+  )
+  equal(
+    bgBlack("hello"),
     "\u001b[40mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgRed("hello"),
+  )
+  equal(
+    bgRed("hello"),
     "\u001b[41mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgGreen("hello"),
+  )
+  equal(
+    bgGreen("hello"),
     "\u001b[42mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgYellow("hello"),
+  )
+  equal(
+    bgYellow("hello"),
     "\u001b[43mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgBlue("hello"),
+  )
+  equal(
+    bgBlue("hello"),
     "\u001b[44mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgMagenta("hello"),
+  )
+  equal(
+    bgMagenta("hello"),
     "\u001b[45mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgCyan("hello"),
+  )
+  equal(
+    bgCyan("hello"),
     "\u001b[46mhello\u001b[49m"
-  );
-  assert.equal(
-    c.bgWhite("hello"),
+  )
+  equal(
+    bgWhite("hello"),
     "\u001b[47mhello\u001b[49m"
-  );
+  )
+})
 
-});
-
-t.result();
+result()

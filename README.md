@@ -8,13 +8,13 @@ A simple library for colored output in your console.
 
 ## Usage
 
-```js
-var c = require('neocolor');
+```typescript
+import c from "neocolor"
 
-console.log(c.yellow('hello you'));
-console.error(c.red('alert!'));
+console.log(c.yellow('hello you'))
+console.error(c.red('alert!'))
 ```
 
-## Thank you
+## Thanks ❤
 
 Logo: [Michele Oliosi](http://michaloe.deviantart.com/)
