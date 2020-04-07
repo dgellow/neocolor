@@ -35,7 +35,7 @@
   "homepage": "https://github.com/dgellow/neocolor",
   "devDependencies": {
     "@types/node": "^13.11.0",
-    "tesuto": "2.0.2",
+    "tesuto": "^2.1.1",
     "typescript": "^3.8.3"
   }
 }
