@@ -1,6 +1,33 @@
-import { equal } from 'assert'
-import { report, result } from 'tesuto'
-import { reset, bold, dim, italic, underline, inverse, hidden, strikethrough, black, red, green, yellow, blue, magenta, cyan, white, gray, grey, bgBlack, bgRed, bgGreen, bgYellow, bgBlue, bgMagenta, bgCyan, bgWhite } from './index.js'
+import { equal } from "assert"
+import { report, result } from "tesuto"
+import {
+  bgBlack,
+  bgBlue,
+  bgCyan,
+  bgGreen,
+  bgMagenta,
+  bgRed,
+  bgWhite,
+  bgYellow,
+  black,
+  blue,
+  bold,
+  cyan,
+  dim,
+  gray,
+  green,
+  grey,
+  hidden,
+  inverse,
+  italic,
+  magenta,
+  red,
+  reset,
+  strikethrough,
+  underline,
+  white,
+  yellow,
+} from "./index.js"
 
 report("colors", function () {
   equal(

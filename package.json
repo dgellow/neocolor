@@ -3,10 +3,13 @@
   "version": "2.0.0",
   "description": "Minimal library for colored console output",
   "type": "module",
-  "main": "./index.js",
-  "exports": "./index.js",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "node test.js"
+    "prepublish": "yarn build",
+    "build": "tsc -p .",
+    "test": "yarn build && node ./dist/test.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,8 @@
   },
   "homepage": "https://github.com/dgellow/neocolor",
   "devDependencies": {
-    "tesuto": "2.0.2"
+    "@types/node": "^13.11.0",
+    "tesuto": "2.0.2",
+    "typescript": "^3.8.3"
   }
 }
